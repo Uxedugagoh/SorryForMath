@@ -51,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
     void fetchRecord() {
         AsyncTask.execute(() -> {
             try {
-                URL url = new URL("http://10.0.2.2/phpserver/get_record.php?username=" + username);
+                URL url = new URL("http://10.0.2.2/get_record.php?username=" + username);
                 HttpURLConnection conn = (HttpURLConnection) url.openConnection();
                 BufferedReader reader = new BufferedReader(new InputStreamReader(conn.getInputStream()));
                 String line = reader.readLine();

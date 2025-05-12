@@ -49,7 +49,7 @@ public class RegistrationActivity extends AppCompatActivity {
             String password = params[1];
             try {
                 // Путь до PHP-обработчика
-                URL url = new URL("http://10.0.2.2/phpserver/register.php");
+                URL url = new URL("http://10.0.2.2/sorryformath/register.php");
 
                 String postData = "username=" + URLEncoder.encode(username, "UTF-8") +
                         "&password=" + URLEncoder.encode(password, "UTF-8");

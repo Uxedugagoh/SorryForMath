@@ -89,7 +89,7 @@ public class GameActivity extends AppCompatActivity {
     void updateRecord() {
         new Thread(() -> {
             try {
-                URL url = new URL("http://10.0.2.2/phpserver/update_record.php");
+                URL url = new URL("http://10.0.2.2/update_record.php");
                 HttpURLConnection conn = (HttpURLConnection) url.openConnection();
                 conn.setRequestMethod("POST");
                 conn.setDoOutput(true);

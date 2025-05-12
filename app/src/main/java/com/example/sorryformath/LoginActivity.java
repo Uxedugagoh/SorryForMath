@@ -44,7 +44,7 @@ public class LoginActivity extends AppCompatActivity {
 
             try {
                 // URL к скрипту login.php
-                URL url = new URL("http://10.0.2.2/phpserver/login.php");
+                URL url = new URL("http://10.0.2.2/sorryformath/login.php");
                 HttpURLConnection conn = (HttpURLConnection) url.openConnection();
                 conn.setRequestMethod("POST");
                 conn.setDoOutput(true);
